@@ -1,4 +1,8 @@
-FROM birchwoodlangham/ubuntu-base:16.04
+FROM birchwoodlangham/ubuntu-base:latest
+
+MAINTAINER Tan Quach <tan.quach@birchwoodlangham.com>
+
+ENV DEBIAN_FRONTEND noninteractive
 
 RUN apt-get update && \
 		apt-get install -y -qq --fix-missing libxext-dev libxrender-dev libxslt1.1 \
